@@ -47,8 +47,8 @@ def to_morse(english_plain_text : str) -> str:
 
 # Exécute chaque fonction et stocke le résultat dans un fichier texte
 def main(text : str) -> str:
-    with open(f"{text}.txt", "a", encoding="utf-8") as file :
-        file.write(f"Input : {text} \n")
+    with open(f"output.txt", "a", encoding="utf-8") as file :
+        print(file.write(f"Input : {text} \n"))
         file.write(f"ASCII : {to_ascii(text)} \n")
         file.write(f"Base64 : {to_base64(text)} \n")
         file.write(f"Hex : {to_hex(text)} \n")
