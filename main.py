@@ -47,14 +47,11 @@ def to_morse(english_plain_text : str) -> str:
 
 # Exécute chaque fonction et stocke le résultat dans un fichier texte
 def main(text : str) -> str:
-    with open(f"output.txt", "a", encoding="utf-8") as file :
-        print(file.write(f"Input : {text} \n"))
-        print(file.write(f"ASCII : {to_ascii(text)} \n"))
-        print(file.write(f"Base64 : {to_base64(text)} \n"))
-        print(file.write(f"Hex : {to_hex(text)} \n"))
-        print(file.write(f"Binary : {to_binary(text)} \n"))
-        print(file.write(f"Octal : {to_octal(text)} \n"))
-        print(file.write(f"Decimal : {to_decimal(text)} \n"))
-        print(file.write(f"Morse : {to_morse(text)} \n"))
+    with open("output.txt", "a", encoding="utf-8") as file :
+        file.write(f"Input : {text} \n")
+    for function in [to_ascii, to_base64, to_hex, to_binary, to_octal, to_decimal, to_morse]:
+        print(f"{function} : {function(text)}")
+        with open("output.txt", "a", encoding="utf-8") as file:
+            file.write(f"{function} : {function(text)} \n")
 
 main(input("Enter a string : "))
