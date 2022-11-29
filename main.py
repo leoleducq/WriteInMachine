@@ -45,15 +45,16 @@ def to_morse(english_plain_text : str) -> str:
     except :
         return "Invalid input"
 
-text = input("Enter a string : ")
-
 # Exécute chaque fonction et stocke le résultat dans un fichier texte
-with open(f"{text}.txt", "a", encoding="utf-8") as file :
-    file.write(f"Input : {text} \n")
-    file.write(f"ASCII : {to_ascii(text)} \n")
-    file.write(f"Base64 : {to_base64(text)} \n")
-    file.write(f"Hex : {to_hex(text)} \n")
-    file.write(f"Binary : {to_binary(text)} \n")
-    file.write(f"Octal : {to_octal(text)} \n")
-    file.write(f"Decimal : {to_decimal(text)} \n")
-    file.write(f"Morse : {to_morse(text)} \n")
+def main(text : str) -> str:
+    with open(f"{text}.txt", "a", encoding="utf-8") as file :
+        file.write(f"Input : {text} \n")
+        file.write(f"ASCII : {to_ascii(text)} \n")
+        file.write(f"Base64 : {to_base64(text)} \n")
+        file.write(f"Hex : {to_hex(text)} \n")
+        file.write(f"Binary : {to_binary(text)} \n")
+        file.write(f"Octal : {to_octal(text)} \n")
+        file.write(f"Decimal : {to_decimal(text)} \n")
+        file.write(f"Morse : {to_morse(text)} \n")
+
+main(input("Enter a string : "))
