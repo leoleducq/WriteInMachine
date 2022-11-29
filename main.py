@@ -49,12 +49,12 @@ def to_morse(english_plain_text : str) -> str:
 def main(text : str) -> str:
     with open(f"output.txt", "a", encoding="utf-8") as file :
         print(file.write(f"Input : {text} \n"))
-        file.write(f"ASCII : {to_ascii(text)} \n")
-        file.write(f"Base64 : {to_base64(text)} \n")
-        file.write(f"Hex : {to_hex(text)} \n")
-        file.write(f"Binary : {to_binary(text)} \n")
-        file.write(f"Octal : {to_octal(text)} \n")
-        file.write(f"Decimal : {to_decimal(text)} \n")
-        file.write(f"Morse : {to_morse(text)} \n")
+        print(file.write(f"ASCII : {to_ascii(text)} \n"))
+        print(file.write(f"Base64 : {to_base64(text)} \n"))
+        print(file.write(f"Hex : {to_hex(text)} \n"))
+        print(file.write(f"Binary : {to_binary(text)} \n"))
+        print(file.write(f"Octal : {to_octal(text)} \n"))
+        print(file.write(f"Decimal : {to_decimal(text)} \n"))
+        print(file.write(f"Morse : {to_morse(text)} \n"))
 
 main(input("Enter a string : "))
