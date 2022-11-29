@@ -1,0 +1,16 @@
+Input : oioiiio 
+<function to_ascii at 0x000001E07ED11BC0> : 111105111105105105111 
+<function to_base64 at 0x000001E07EDCFC40> : b'b2lvaWlpbw==' 
+<function to_hex at 0x000001E07F049080> : 6f696f6969696f 
+<function to_binary at 0x000001E07F049120> : 1101111 1101001 1101111 1101001 1101001 1101001 1101111 
+<function to_octal at 0x000001E07F0491C0> : 157 151 157 151 151 151 157 
+<function to_decimal at 0x000001E07F049260> : 111 105 111 105 105 105 111 
+<function to_morse at 0x000001E07F049300> : --- .. --- .. .. .. --- 
+Input : ctfguyghkj 
+<function to_ascii at 0x000001E07ED11BC0> : 99116102103117121103104107106 
+<function to_base64 at 0x000001E07EDCFC40> : b'Y3RmZ3V5Z2hrag==' 
+<function to_hex at 0x000001E07F049080> : 63746667757967686b6a 
+<function to_binary at 0x000001E07F049120> : 1100011 1110100 1100110 1100111 1110101 1111001 1100111 1101000 1101011 1101010 
+<function to_octal at 0x000001E07F0491C0> : 143 164 146 147 165 171 147 150 153 152 
+<function to_decimal at 0x000001E07F049260> : 99 116 102 103 117 121 103 104 107 106 
+<function to_morse at 0x000001E07F049300> : -.-. - ..-. --. ..- -.-- --. .... -.- .--- 
