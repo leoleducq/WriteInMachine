@@ -2,7 +2,7 @@ import base64
 
 from utils import dict_char_to_morse
 
-class Machina :
+class Machine :
     def __init__(self, text):
         self.main(text)
 
@@ -63,4 +63,4 @@ if __name__ == "__main__":
         text = input("Enter a text to convert : ")
         if text == "quit" :
             break
-        Machina(text)
+        Machine(text)
