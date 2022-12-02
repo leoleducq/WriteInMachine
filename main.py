@@ -50,12 +50,13 @@ class Machine :
 
     # Exécute chaque fonction et stocke le résultat dans un fichier texte
     def main(self, text : str) -> str:
-        with open("../output.txt", "a", encoding="utf-8") as file :
+        with open("output.txt", "a", encoding="utf-8") as file :
             file.write(f"Input : {text} \n")
         for function in [self.to_ascii, self.to_base64, self.to_hex, self.to_binary, self.to_octal, self.to_decimal, self.to_morse]:
-            print(f"{function} : {function(text)}")
-            with open("../output.txt", "a", encoding="utf-8") as file:
-                file.write(f"{function} : {function(text)} \n")
+            # Affiche le nom de la fonction
+            print(f"{function.__name__} : {function(text)}")
+            with open("output.txt", "a", encoding="utf-8") as file:
+                file.write(f"{function.__name__} : {function(text)} \n")
 
 if __name__ == "__main__":
     # Tant que l'utilisateur ne quitte pas le programme, on lui demande un texte à convertir
