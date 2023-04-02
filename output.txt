@@ -982,3 +982,30 @@ to_binary : 1000101 1111000 1110000 1101111 1110011 1101001 1110100 1101001 1101
 to_octal : 105 170 160 157 163 151 164 151 157 156 163 40 57 40 115 165 163 351 145 163 
 to_decimal : 69 120 112 111 115 105 116 105 111 110 115 32 47 32 77 117 115 233 101 115 
 to_morse : Invalid input 
+Input : Salut Léo 
+to_ascii : 83971081171163276233111 
+to_base64 : Invalid input 
+to_hex : Invalid input 
+to_binary : 1010011 1100001 1101100 1110101 1110100 100000 1001100 11101001 1101111 
+to_octal : 123 141 154 165 164 40 114 351 157 
+to_decimal : 83 97 108 117 116 32 76 233 111 
+to_morse : Invalid input 
+to_periodic : Invalid input 
+Input : Salut Leo 
+to_ascii : 83971081171163276101111 
+to_base64 : b'U2FsdXQgTGVv' 
+to_hex : 53616c7574204c656f 
+to_binary : 1010011 1100001 1101100 1110101 1110100 100000 1001100 1100101 1101111 
+to_octal : 123 141 154 165 164 40 114 145 157 
+to_decimal : 83 97 108 117 116 32 76 101 111 
+to_morse : ... .- .-.. ..- -   .-.. . --- 
+to_periodic : K H Mg Sc Ca   Mg B P 
+Input : Salut Leo 
+to_ascii : 83971081171163276101111 
+to_base64 : b'U2FsdXQgTGVv' 
+to_hex : 53616c7574204c656f 
+to_binary : 1010011 1100001 1101100 1110101 1110100 100000 1001100 1100101 1101111 
+to_octal : 123 141 154 165 164 40 114 145 157 
+to_decimal : 83 97 108 117 116 32 76 101 111 
+to_morse : ... .- .-.. ..- -   .-.. . --- 
+to_periodic : KHMgScCa MgBP 
