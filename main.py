@@ -1,6 +1,6 @@
 import base64
 
-from utils import dict_char_to_morse
+from utils import dict_char_to_morse, dict_char_to_periodic
 
 class Machine :
     def __init__(self, text):
@@ -47,12 +47,18 @@ class Machine :
             return " ".join([dict_char_to_morse[char.upper()] if char != " " else " " for char in english_plain_text])
         except :
             return "Invalid input"
+    
+    def to_periodic(self, text : str) -> str:
+        try :
+            return "".join([dict_char_to_periodic[char.upper()] if char != " " else " " for char in text])
+        except :
+            return "Invalid input"
 
     # Exécute chaque fonction et stocke le résultat dans un fichier texte
     def main(self, text : str) -> str:
         with open("output.txt", "a", encoding="utf-8") as file :
             file.write(f"Input : {text} \n")
-        for function in [self.to_ascii, self.to_base64, self.to_hex, self.to_binary, self.to_octal, self.to_decimal, self.to_morse]:
+        for function in [self.to_ascii, self.to_base64, self.to_hex, self.to_binary, self.to_octal, self.to_decimal, self.to_morse, self.to_periodic]:
             # Affiche le nom de la fonction
             print(f"{function.__name__} : {function(text)}")
             with open("output.txt", "a", encoding="utf-8") as file:
